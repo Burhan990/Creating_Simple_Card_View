@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cardviewexapmpls.MainActivity"
+    android:background="#fcfcfc">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingtool"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="?attr/colorPrimary"
+            app:title="my app"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/coolpas"
+            >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarid"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_collapseMode="pin"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            >
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/baltistan"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="330dp"
+                android:layout_height="300dp"
+                android:layout_margin="10dp"
+                android:elevation="16dp"
+                android:background="@drawable/shadow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#4340B8"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="REGIONS"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"/>
+                    <View
+                        android:layout_width="180dp"
+                        android:layout_height="2dp"
+                        android:background="#C70039"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp">
+                    </View>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Baltistan"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:layout_gravity="center"/>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/skardu"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_width="280dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:elevation="16dp"
+                        android:background="@drawable/shadow">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+
+                            android:gravity="start">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal"
+                                android:background="@drawable/dhaka"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/district"
+                                    android:padding="10dp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="210dp"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="SKARDU"
+                                    android:textStyle="bold"
+                                    android:textSize="20sp"
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/black"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/kharmang"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_width="280dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:elevation="16dp"
+                        android:background="@drawable/shadow">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+
+                            android:gravity="start">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal"
+                                android:background="#031C74"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/district"
+                                    android:padding="10dp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="210dp"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="KHARMANG"
+                                    android:textStyle="bold"
+                                    android:textSize="20dp"
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/black"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/ganchi"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_width="280dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:elevation="16dp"
+                        android:background="@drawable/shadow">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+
+                            android:gravity="start">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal"
+                                android:background="#031C74"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/district"
+                                    android:padding="10dp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="210dp"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="GANCHE"
+                                    android:textStyle="bold"
+                                    android:textSize="20dp"
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/black"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/shigar"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_width="280dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:elevation="16dp"
+                        android:background="@drawable/shadow">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+
+                            android:gravity="start">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal"
+                                android:background="#031C74"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/district"
+                                    android:padding="10dp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="210dp"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="SHIGAR"
+                                    android:textStyle="bold"
+                                    android:textSize="20dp"
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/black"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/Dgilgit"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="330dp"
+                android:layout_height="300dp"
+                android:layout_margin="10dp"
+                android:elevation="16dp"
+                android:background="@drawable/shadow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#4340B8"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="REGIONS"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"/>
+                    <View
+                        android:layout_width="180dp"
+                        android:layout_height="2dp"
+                        android:background="#C70039"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp">
+                    </View>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Gilgit"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:layout_gravity="center"/>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/gilgit"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_width="280dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:elevation="16dp"
+                        android:background="@drawable/shadow">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+
+                            android:gravity="start">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal"
+                                android:background="#031C74"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/district"
+                                    android:padding="10dp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="210dp"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="GILGIT"
+                                    android:textStyle="bold"
+                                    android:textSize="20dp"
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/black"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/ghizir"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_width="280dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:elevation="16dp"
+                        android:background="@drawable/shadow">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+
+                            android:gravity="start">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal"
+                                android:background="#031C74"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/district"
+                                    android:padding="10dp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="210dp"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="GHIZIR"
+                                    android:textStyle="bold"
+                                    android:textSize="20dp"
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/black"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/hunza"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_width="280dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:elevation="16dp"
+                        android:background="@drawable/shadow">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+
+                            android:gravity="start">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal"
+                                android:background="#031C74"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/district"
+                                    android:padding="10dp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="210dp"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="HUNZA"
+                                    android:textStyle="bold"
+                                    android:textSize="20dp"
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/black"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/nagar"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_width="280dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:elevation="16dp"
+                        android:background="@drawable/shadow">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+
+                            android:gravity="start">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal"
+                                android:background="#031C74"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/district"
+                                    android:padding="10dp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="210dp"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="NAGAR"
+                                    android:textStyle="bold"
+                                    android:textSize="20dp"
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/black"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/Ddiamer"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="330dp"
+                android:layout_height="300dp"
+                android:layout_margin="10dp"
+                android:elevation="16dp"
+                android:background="@drawable/shadow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#4340B8"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="REGIONS"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"/>
+                    <View
+                        android:layout_width="180dp"
+                        android:layout_height="2dp"
+                        android:background="#C70039"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp">
+                    </View>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Diamer"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:layout_gravity="center"/>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/diamer"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_width="280dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:elevation="16dp"
+                        android:background="@drawable/shadow">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+
+                            android:gravity="start">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal"
+                                android:background="#031C74"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/district"
+                                    android:padding="10dp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="210dp"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="DIAMER"
+                                    android:textStyle="bold"
+                                    android:textSize="20dp"
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/black"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/astore"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_width="280dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:elevation="16dp"
+                        android:background="@drawable/shadow">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+
+                            android:gravity="start">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal"
+                                android:background="#031C74"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/district"
+                                    android:padding="10dp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="210dp"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="ASTORE"
+                                    android:textStyle="bold"
+                                    android:textSize="20dp"
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/black"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>
